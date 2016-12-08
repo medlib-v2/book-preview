@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Books Embedded Viewer API Example</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+  </head>
+  <body>
+    <!-- <book-preview isbn="1234567890" page-id="PA5" style="width: 600px; height: 700px"></book-preview> -->
+    <div id="book-preview">
+      <div class="ui small images">
+        <a href="#" v-preview="" :isbn="'0738531367'" page-id="PA5">Voir en ligne</a>
+      </div>
+      <box-preview></box-preview>
+    </div>
+    <div id="preview">
+      <book-preview isbn="0738531367" page-id="PA5" style="width: 600px; height: 700px"></book-preview>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
